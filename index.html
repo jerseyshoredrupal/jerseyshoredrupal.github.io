@@ -1,74 +1,242 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Drupal 8 at the Jersey Shore</title>
-    <link type="text/css" rel="stylesheet" href="d8njshore/css/magic-bootstrap.css" media="all">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Add custom CSS here -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
 </head>
+
 <body>
-<div id="page">
-    <header class="page-header">
-        <h1>Drupal 8 at the Jersey Shore</h1>
-        <nav><a href="#agenda">Agenda</a> | <a href="#location">Location</a> | <a href="#hotel">Hotel</a> | <a href="#directions">Directions</a></nav>
-    </header>
-    <main>
-        <div class="content">
-            <h2>Saturday, July 12, 2014 at 9:00 AM (EST) - Sunday, July 13, 2014 at 5:00 PM (EST)</h2>
-            <h2>Asbury Park, NJ, United States</h2>
-            <p>Join like-minded Drupal contributors for two full days of core and contrib sprinting to further advance Drupal 8! Attendees will work on critical core issues and release blockers, as well as upgrading contrib modules. It is amazing what can happen when people come together!</p>
 
-            <h3 id="agenda">Agenda</h3>
-            <p>Each day will begin at 9:30am with a quick organizing and  discussion session followed by forming groups and working on issues. Our goal is to keep all attendees focused on contributing, so we will provide breakfast, lunch, and snacks throughout the day. On Saturday night we will go out on the town for dinner, followed by an evening of continued sprinting with beer and other refreshments.</p>
-
-            <div class="left-col">
-                <h3 id="location">Location</h3>
-                <strong>Cowerks</strong><br />
-                619 Lake Ave. (3rd Floor)<br />
-                Asbury Park, NJ 07712<br />
-                <a href="http://www.cowerking.com/" target="_blank">http://www.cowerking.com/</a>
-
-                <h3 id="hotel">Hotel</h3>
-                <p>[TBD]</p>
-
-                <h3 id="directions">Directions - Getting to Asbury Park, NJ</h3>
-                <h4>Mass Transit</h4>
-                <p>Take NJ Transit's North Jersey Coast Line train to Asbury Park. Then it's just a short walk to the event location.</p>
-                <a href="http://www.njtransit.com/rg/rg_servlet.srv?hdnPageAction=TrainStationLookupFrom&selStation=8" target="_blank">http://www.njtransit.com/rg/rg_servlet.srv?hdnPageAction=TrainStationLookupFrom&selStation=8</a></p>
-
-                <h4>Driving</h4>
-                <p><strong>From North Jersey, NY area:</strong></p>
-                <ul>
-                    <li>New Jersey Turnpike South to Exit 11 Garden State Parkway South.</li>
-                    <li>Garden State Pkwy to exit 102 Asbury Ave Tinton Falls) bear right.</li>
-                    <li>Merge onto Asbury Ave.</li>
-                    <li>Continue onto NJ-35 S/Rte 35 S.</li>
-                    <li>Turn left onto NJ-35 N/Rte 35 N.</li>
-                    <li>Slight right onto Asbury Ave.</li>
-                    <li>Turn right onto Main St.</li>
-                    <li>Turn left onto Lake Ave.</li>
-                    <li>Cowerks will be on the left.</li>
-                </ul>
-
-                <p><strong>From Philadelphia Area:</strong></p>
-                <ul>
-                    <li>NJ Turnpike North to Exit 7A. Follow I-195 E approximately one half hour to Rte 18 N.</li>
-                    <li>Take Rte 18 N a few miles to Exit 10A (Route 66 /Asbury Park).</li>
-                    <li>Take Rte 66/Asbury Ave to the Asbury Circle.</li>
-                    <li>Take the second exit on the right off of the circle to Asbury Ave (The Coca Cola building will be on your right).</li>
-                    <li>Follow directions above from Asbury Avenue.</li>
-                </ul>
-
-                <p><strong>From South Jersey Area:</strong></p>
-                <ul>
-                    <li>Garden State Parkway North to exit 100-A Asbury Park.</li>
-                    <li>Follow Route 66/Asbury Avenue approximately 5 miles to the Asbury Circle.</li>
-                    <li>Take the second exit on the right off of the circle to Asbury Ave (The Coca Cola building will be on your right).</li>
-                    <li>Follow directions above from Asbury Avenue.</li>
-                </ul>
-            </div>
-            <div class="right-col">
-                <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zgGevvMIEwmM.koQbJdE8cX2Q" width="640" height="480"></iframe></div>
-        </div>
-    </main>
-    <footer>&copy; 2014 Central Jersey Drupal Group</footer>
+    <!-- Side Menu -->
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand"><a href="http://jerseyshoredrupal.github.io">Menu</a>
+            </li>
+            <li><a href="#top">Home</a>
+            </li>
+            <li><a href="#agenda">Agenda</a>
+            </li>
+            <li><a href="#location">Location</a>
+            </li>
+            <li><a href="#hotel">Hotel</a>
+            </li>
+            <li><a href="#directions">Directions</a>
+            </li>
+            <li><a href="#map">Map</a>
+            </li>
+        </ul>
     </div>
+    <!-- /Side Menu -->
+
+    <!-- Full Page Image Header Area -->
+    <div id="top" class="header">
+        <div class="vert-text">
+            <h1>Drupal 8 at the Jersey Shore</h1>
+            <h3>
+                Saturday, July 12, 2014 at 9:00 AM to Sunday, July 13, 2014 at 5:00 PM<br />
+                <em>Asbury Park, NJ</em></h3>
+            <a href="#about" class="btn btn-default btn-lg btn-primary">Find Out More</a>
+        </div>
+    </div>
+    <!-- /Full Page Image Header Area -->
+
+    <!-- Intro -->
+    <div id="agenda" class="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h2>AGENDA</h2>
+                    <p class="lead">Each day will begin at 9:30am with a quick organizing and  discussion session followed by forming groups and working on issues. Our goal is to keep all attendees focused on contributing, so we will provide breakfast, lunch, and snacks throughout the day. On Saturday night we will go out on the town for dinner, followed by an evening of continued sprinting with beer and other refreshments.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Intro -->
+
+    <!-- Services -->
+    <div id="location" class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>LOCATION</h2>
+                    <hr>
+                </div>
+            </div>
+                <div class="col-md-4 col-md-offset-4 text-center">
+
+                        <i class="service-icon fa fa-map-marker"></i>
+                        <h3>Cowerks</h3>
+                        <p>619 Lake Ave. (3rd Floor)<br />
+                            Asbury Park, NJ 07712<br />
+                            <a href="http://www.cowerking.com/" target="_blank">http://www.cowerking.com/</a></p>
+
+            </div>
+        </div>
+    </div>
+    <!-- /Services -->
+
+    <!-- Callout -->
+    <div id="hotel" class="callout">
+        <div class="vert-text">
+            <h1>HOTEL</h1>
+            <h3>Details coming soon!</h3>
+        </div>
+    </div>
+    <!-- /Callout -->
+
+    <!-- Portfolio -->
+    <div id="directons" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <h2>DIRECTIONS</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2 text-center">
+                    <div class="portfolio-item">
+                        <h4>Mass Transit</h4>
+                        <p>Take NJ Transit's North Jersey Coast Line train to Asbury Park. Then it's just a short walk to the event location.</p>
+                        <a href="http://www.njtransit.com/rg/rg_servlet.srv?hdnPageAction=TrainStationLookupFrom&selStation=8" target="_blank">http://www.njtransit.com/rg/rg_servlet.srv?hdnPageAction=TrainStationLookupFrom&selStation=8</a></p>
+
+                        <h4>Driving</h4>
+                        <p><strong>From North Jersey, NY area:</strong></p>
+                        <ul>
+                            <li>New Jersey Turnpike South to Exit 11 Garden State Parkway South.</li>
+                            <li>Garden State Pkwy to exit 102 Asbury Ave Tinton Falls) bear right.</li>
+                            <li>Merge onto Asbury Ave.</li>
+                            <li>Continue onto NJ-35 S/Rte 35 S.</li>
+                            <li>Turn left onto NJ-35 N/Rte 35 N.</li>
+                            <li>Slight right onto Asbury Ave.</li>
+                            <li>Turn right onto Main St.</li>
+                            <li>Turn left onto Lake Ave.</li>
+                            <li>Cowerks will be on the left.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center">
+                    <div class="portfolio-item">
+                        <p><strong>From Philadelphia Area:</strong></p>
+                        <ul>
+                            <li>NJ Turnpike North to Exit 7A. Follow I-195 E approximately one half hour to Rte 18 N.</li>
+                            <li>Take Rte 18 N a few miles to Exit 10A (Route 66 /Asbury Park).</li>
+                            <li>Take Rte 66/Asbury Ave to the Asbury Circle.</li>
+                            <li>Take the second exit on the right off of the circle to Asbury Ave (The Coca Cola building will be on your right).</li>
+                            <li>Follow directions above from Asbury Avenue.</li>
+                        </ul>
+
+                        <p><strong>From South Jersey Area:</strong></p>
+                        <ul>
+                            <li>Garden State Parkway North to exit 100-A Asbury Park.</li>
+                            <li>Follow Route 66/Asbury Avenue approximately 5 miles to the Asbury Circle.</li>
+                            <li>Take the second exit on the right off of the circle to Asbury Ave (The Coca Cola building will be on your right).</li>
+                            <li>Follow directions above from Asbury Avenue.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Portfolio -->
+
+    <!-- Call to Action -->
+    <div class="call-to-action">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <h3>Limited Registration Available</h3>
+                    <a href="https://www.eventbrite.com/e/drupal-8-at-the-jersey-shore-tickets-11873067665" class="btn btn-lg btn-primary">Go to Eventbrite!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Call to Action -->
+
+    <!-- Map -->
+    <div id="map" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://mapsengine.google.com/map/u/0/embed?mid=zgGevvMIEwmM.koQbJdE8cX2Q"></iframe>
+        <br />
+        <small>
+            <a href="https://mapsengine.google.com/map/u/0/embed?mid=zgGevvMIEwmM.koQbJdE8cX2Q"></a>
+        </small>
+        </iframe>
+    </div>
+    <!-- /Map -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                    <ul class="list-inline">
+                        <li><a href="http://www.meetup.com/Central-NJ-Drupal-Group/" target="_blank"><i class="fa fa-comment fa-3x"></i></a>
+                        </li>
+                        <li><a href="http://www.twitter.com/drupalcampnj/" target="_blank"><i class="fa fa-twitter fa-3x"></i></a>
+                        </li>
+                        <li><a href="http://groups.drupal.org/new-jersey" target="_blank"><i class="fa fa-anchor fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <div class="top-scroll">
+                        <a href="#top"><i class="fa fa-circle-arrow-up scroll fa-4x"></i></a>
+                    </div>
+                    <hr>
+                    <p>Copyright &copy; Central NJ Drupal 2014 &bull; <a href="http://www.drupalcampnj.org" target="_blank">www.drupalcampnj.org</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- JavaScript -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+    <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
 </body>
+
 </html>
