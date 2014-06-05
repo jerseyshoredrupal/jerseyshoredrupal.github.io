@@ -21,6 +21,7 @@ section,
 summary {
   display: block;
 }
+main {width: 90%; margin: 0 auto;}
 audio,
 canvas,
 progress,
@@ -269,7 +270,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #f2eed5;
+  background-color: #ffffff;
 }
 input,
 button,
@@ -556,8 +557,23 @@ a.bg-danger:hover {
 }
 .page-header {
   padding-bottom: 9px;
-  margin: 40px 0 20px;
+  margin: 0 0 20px;
   border-bottom: 1px solid #eeeeee;
+  background: #258cf5;
+}
+.page-header h1 {
+    color: #ffffff;
+    margin-top: 0;
+    padding: 1em;
+    display: inline;
+}
+.page-header nav {
+    float: right;
+    display:inline;
+    padding: 1em 3em;
+}
+.page-header nav a {
+    color: #ffffff;
 }
 ul,
 ol {
