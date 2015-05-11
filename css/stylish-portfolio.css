@@ -4,6 +4,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background: #F6F6F2;
 }
 
 .vert-text {
@@ -118,7 +119,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(../img/bg-casino.jpg) no-repeat center center fixed;
+  background: url(../img/ap-landscape.jpg) no-repeat bottom center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -134,7 +135,7 @@ body {
 /* Services */
 
 .services {
-  background: #7fbbda;
+  background: url('../img/lakehouse_night_blurbw.jpg') center center fixed;
   padding: 50px 0;
   color: #ffffff;
 }
@@ -158,11 +159,9 @@ i.service-icon {
 /* Callout */
 
 .callout {
-  color: #ffffff;
   display: table;
   height: 400px;
   width: 100%;
-  background: url(../img/callout-sand.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -172,11 +171,11 @@ i.service-icon {
 /* Portfolio */
 
 .portfolio {
-  padding: 50px 0;
+  padding: 15px 0;
 }
 
 .portfolio-item {
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
 
 .img-portfolio {
@@ -188,7 +187,7 @@ i.service-icon {
 
 .call-to-action {
   color: #ffffff;
-  background: #0a5175;
+  background: #5CB85C;
   padding: 50px 0;
 }
 
@@ -232,9 +231,7 @@ i.scroll:hover {
 	background: url(../img/bg-casino.jpg) no-repeat center center scroll;
   }
 
-  .callout {
-	background: url(../img/callout-sand.jpg) no-repeat center center scroll;
-  }
+  .callout {}
 
   .map {
 	height: 75%;
